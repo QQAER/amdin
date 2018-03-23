@@ -39,3 +39,4 @@ $exportLink.addEventListener('click', function(e){
     }
 }, false);
 /***********判断当前浏览器是否为IE*********************/
+
