@@ -44,5 +44,5 @@
     			$list[]=$emp;
 
     		};
-     //echo json_encode($list);
+     echo json_encode($list);
 ?>
