@@ -1,0 +1,27 @@
+SET CHARSET UTF8;
+DROP DATABASE IF EXISTS admin;
+CREATE DATABASE admin CHARSET=UTF8;
+USE admin;
+CREATE TABLE admin_user(
+		pid INT PRIMARY KEY AUTO_INCREMENT, ##�Զ���������
+		name varchar(64),
+		pwd varchar(64)
+);
+##订单
+CREATE TABLE admin_order(
+    pid INT PRIMARY KEY AUTO_INCREMENT, 
+    order_reference varchar(64),
+    merchant_name varchar(64),
+    merchant_order varchar(64),
+    merchant_nomey varchar(64),
+    shiji_nomey varchar(64),
+    feedback varchar(64)
+
+);
+insert into admin_user values(null,'admin','admin');
+insert into admin_order values(null,'O2018010416193310196622','lihaifeng','88888888888888888888888888888888','9.0000000','8.0000000','是');
+insert into admin_order values(null,'O2018010416193310196622','lihaifeng','88888888888888888888888888888888','9.0000000','8.0000000','是');
+insert into admin_order values(null,'O2018010416193310196622','lihaifeng','88888888888888888888888888888888','9.0000000','8.0000000','是');
+insert into admin_order values(null,'O2018010416193310196622','lihaifeng','88888888888888888888888888888888','9.0000000','8.0000000','是');
+insert into admin_order values(null,'O2018010416193310196622','lihaifeng','88888888888888888888888888888888','9.0000000','8.0000000','是');
+insert into admin_order values(null,'O2018010416193310196622','lihaifeng','88888888888888888888888888888888','9.0000000','8.0000000','是');

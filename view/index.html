@@ -153,8 +153,8 @@
                          <th>操作</th>
                      </tr>
                      </thead>
-                     <tbody>
-                         <tr>
+                     <tbody id="tbody">
+                        <!-- <tr>
                              <td>88888</td>
                              <td>O2018010416193310196622</td>
                              <td>text</td>
@@ -296,7 +296,7 @@
                              <td>
                                  <button class="btn btn-primary">详情</button>
                              </td>
-                         </tr>
+                         </tr>-->
                      </tbody>
                  </table>
 
@@ -352,5 +352,33 @@
         <script src="../laydate/src/laydate.js"></script>
         <script src="../js/Director/app.js" type="text/javascript"></script>
         <script src="../js/Director/index.js"></script>
+        <script>
+            $.ajax({
+                type:'get',
+                dataType:'json',
+                url:'../data/admin_order.php',
+                success:function(data){
+                    var str ="";
+                    for(var i=0;i<data.length;i++){
+                        var str1 = data[i];
+                        console.log(data[i])
+                        str+= '<tr>' +
+                            '<td>'+str1.pid+'</td>' +
+                            '<td>'+str1.order_reference+'</td>' +
+                            '<td>'+str1.merchant_order+'</td>' +
+                            '<td>'+str1.order_reference+'</td>' +
+                            '<td>'+str1.merchant_name+'</td>' +
+                            '<td>'+str1.merchant_nomey+'</td>' +
+                            '<td>'+str1.shiji_nomey+'</td>' +
+                            '<td>'+str1.feedback+'</td>' +
+                            '<td>' +
+                            '<button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal">详情</button> '+
+                            '</td>' +
+                            '</tr>'
+                    }
+                    $('#tbody').append(str)
+                }
+            })
+        </script>
 </body>
 </html>
