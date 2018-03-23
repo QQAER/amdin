@@ -358,6 +358,7 @@
                 dataType:'json',
                 url:'../data/admin_order.php',
                 success:function(data){
+                    console.log(data)
                     var str ="";
                     for(var i=0;i<data.length;i++){
                         var str1 = data[i];
@@ -379,6 +380,7 @@
                     $('#tbody').append(str)
                 }
             })
+
         </script>
 </body>
 </html>

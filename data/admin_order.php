@@ -22,7 +22,7 @@
             $rows[]=$row;
         }
           // echo json_encode($rows);
-      var_dump($rows);
+      //var_dump($rows);
 
 
     //获取数据库中所有的数据并计算出最大的页面数
