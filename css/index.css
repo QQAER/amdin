@@ -1,0 +1,80 @@
+input{
+    font-size: 0.6rem;
+}
+.skin-black .navbar,.skin-black .left-side{
+    background: #23262E;
+}
+.skin-black .navbar ,.navbar .nav a.text_center {
+    color: #fff;
+}
+.skin-black .navbar .nav .open > a:focus {
+    padding-bottom: 14px;
+}
+.panel_bg_color{
+    background-color:rgba(0,0,0,.3)!important;
+}
+/*//左侧栏目*/
+#list_group{
+ width:100%;
+ height:auto;
+}
+
+#accordion a{
+    display: block;
+    height:45px;
+    line-height:30px;
+    /*margin: 2px 0;*/
+    border-bottom: 1px solid #23262E;
+}
+#collapseOne a,#collapseTwo a,#collapseTwo1 a,#collapseTwo2 a{
+    background:#23262E;
+    border: none;
+    text-align: left;
+}
+#collapseOne a:hover,#collapseTwo a:hover,#collapseTwo1 a:hover,#collapseTwo2 a:hover{
+    background: #425164;
+}
+
+.btn_active{
+    background: #425164;
+    text-align: left;
+    border-radius: 0;
+}
+/*内容*/
+.right-side{
+    background: #fff;
+}
+.thead_table{
+    background: #f2f2f2;
+}
+.layui_text{
+    background: #01AAED;
+    /*width: 98%;*/
+    height: auto;
+    vertical-align: middle;
+    font-size: .8rem;
+    padding: .8%;
+    line-height: 20px;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 15px;
+}
+.form_select{
+    margin-bottom:15px; width:91%;
+}
+.modal{
+    /*top:100px;*/
+}
+.modal_dialog{
+    position: relative;
+    top:20%;
+    left:0;
+}
+/*分页*/
+.page_header{
+    height: 60px;
+    line-height: 60px;
+    margin-top: -21px;
+    margin-bottom: 20px;
+    text-align: center;
+}
